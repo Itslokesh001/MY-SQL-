@@ -1,0 +1,8 @@
+1.find all the employee who have salary greater than min salary
+solution:SELECT name,salary from employee where salary >(SELECT MIN(salary) from employee;
+
+2.find employee with the minimum age
+solution: SELECT name,age from employee where age=(select min(age) from employee;
+
+3.Print the employee with the average age and age of employee
+solution: Select age,(select avg(age) from employee) AS employee;
