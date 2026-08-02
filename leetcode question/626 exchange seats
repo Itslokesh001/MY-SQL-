@@ -1,0 +1,11 @@
+# Write your MySQL query statement below
+select case 
+when id%2=1 and id+1 in(select id from Seat) then id+1
+when id%2=0 then id-1
+else id
+END AS id,student
+from Seat
+order by id;
+
+
+student are not swapped they are sorted due to order by clause only id changed stuent are swaped by order by clause
